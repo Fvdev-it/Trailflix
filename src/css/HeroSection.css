@@ -1,0 +1,161 @@
+.hero-section {
+  position: relative;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+  color: white;
+  isolation: isolate;
+  padding: 0 2rem;
+  overflow: hidden;
+  margin: 0 2rem 0 2rem;
+  bottom: 1rem;
+}
+
+.hero-overlay {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent);
+  padding: 3rem;
+  width: 100%;
+  max-width: 900px;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: var(--accent);
+}
+
+.hero-genres {
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.genre-badge {
+  background: var(--accent, #bfa14a);
+  color: var(--primary-bg, #181818);
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  user-select: none;
+}
+
+
+.hero-description {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin-bottom: 2rem;
+  color: var(--text);
+}
+
+.hero-buttons button {
+  padding: 0.7rem 1.5rem;
+  margin-right: 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.hero-play {
+  background: white;
+  color: black;
+  font-weight: bold;
+}
+
+.hero-info {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid white;
+}
+
+.hero-info:hover {
+  background: white;
+  color: black;
+}
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+
+.modal-content {
+  background: var(--card-bg, #181818);
+  color: var(--text, #f5f5f5);
+  padding: 2rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 700px;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 2rem;
+  background: transparent;
+  border: none;
+  color: var(--accent, #ffd700);
+  cursor: pointer;
+}
+
+.info-modal h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.info-modal p {
+  margin: 0.3rem 0;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.trailer-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.trailer-content {
+  width: 90%;   
+  max-width: 960px;  
+  background: black;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.close-trailer {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}

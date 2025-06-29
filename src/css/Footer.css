@@ -1,0 +1,70 @@
+.footer {
+  background: var(--card-bg, #111);
+  color: var(--text, #aaa);
+  padding: 2.5rem 2rem 3rem;
+  font-size: 0.9rem;
+  border-top: 2px solid var(--accent, #bfa14a);
+  transition: background 0.3s, color 0.3s;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  color: var(--text, #aaa);
+}
+
+.footer-socials svg:hover {
+  color: var(--accent, #ffd700);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.6rem;
+}
+
+.footer-links a {
+  color: var(--text, #aaa);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: var(--accent, #ffd700);
+}
+
+.footer-button {
+  background: transparent;
+  border: 1px solid var(--text, #aaa);
+  color: var(--text, #aaa);
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.footer-button:hover {
+  border-color: var(--accent, #ffd700);
+  color: var(--accent, #ffd700);
+}
+
+.footer-copy {
+  font-size: 0.85rem;
+  color: var(--secondary-text, #666);
+}

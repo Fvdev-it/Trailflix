@@ -1,0 +1,96 @@
+.favorites {
+  padding: 2.5rem 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(120deg, #232526 0%, #414345 100%);
+  min-height: 100vh;
+}
+
+.favorites h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2.8rem;
+  color: var(--accent-color, #ff6f61);
+  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.favorites-empty {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 18px;
+  margin: 2rem auto;
+  max-width: 600px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.22);
+  backdrop-filter: blur(4px);
+  transition: box-shadow 0.2s;
+}
+
+.favorites-empty h2 {
+  margin-bottom: 1rem;
+  font-size: 2.2rem;
+  color: var(--accent-color, #ff6f61);
+  font-weight: 600;
+}
+
+.favorites-empty p {
+  color: rgba(255,255,255,0.7);
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+
+
+.favorites .movie-card {
+  width: 200px;     
+  height: 400px;
+}
+
+.favorites .movie-card .poster-img {
+   width: 100%;
+  height: 100%;
+  display: block;
+  filter: brightness(0.95) contrast(1.08);
+  transition: filter 0.2s ease;
+}
+
+.favorites .movie-card .movie-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--accent, #ffd700);
+  margin: 0;
+  line-height: 1.3;
+  max-height: 2.6em;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.favorites .movie-card .movie-year {
+   font-size: 0.85rem;
+  color: #b3a369;
+  margin-top: 0.2rem;
+}
+
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 2rem;
+  padding-bottom: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
